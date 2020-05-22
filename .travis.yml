@@ -18,7 +18,7 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
   # Push Images to docker hub
-  - docker push mp4407/multi-client
-  - docker push mp4407/multi-nginx
-  - docker push mp4407/multi-server
-  - docker push mp4407/multi-worker
+  - docker push maping77/multi-client
+  - docker push maping77/multi-nginx
+  - docker push maping77/multi-server
+  - docker push maping77/multi-worker
