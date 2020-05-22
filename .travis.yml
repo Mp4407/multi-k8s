@@ -9,10 +9,10 @@ script:
   - docker run -e CI=true mp4407/react-test npm test
 
 after_success:
-  - docker build -t mp4407/multi-client ./client
-  - docker build -t mp4407/multi-nginx ./nginx
-  - docker build -t mp4407/multi-server ./server
-  - docker build -t mp4407/multi-worker ./worker
+  - docker build -t maping77/multi-client ./client
+  - docker build -t maping77/multi-nginx ./nginx
+  - docker build -t maping77/multi-server ./server
+  - docker build -t maping77/multi-worker ./worker
 
   # Login to docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
