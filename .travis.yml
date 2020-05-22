@@ -15,11 +15,10 @@ after_success:
   - docker build -t mp4407/multi-worker -f ./worker
 
   # Login to docker CLI
-
-#  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
   # Push Images to docker hub
-#  - docker push mp4407/multi-client
-#  - docker push mp4407/multi-nginx
-#  - docker push mp4407/multi-server
-#  - docker push mp4407/multi-worker
+  - docker push mp4407/multi-client
+  - docker push mp4407/multi-nginx
+  - docker push mp4407/multi-server
+  - docker push mp4407/multi-worker
